@@ -29,6 +29,15 @@ namespace ProEventos.API.Controllers
             DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
             ImageURL = "jesusCristo.png",
             },
+             new Evento(){
+            EventoId = 3,
+            Tema = "JavaScript",
+            Local = "Barra Funda",
+            Lote = "3° Lote",
+            QtdPessoas = 2,
+            DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
+            ImageURL = "papa.png",
+            },
         };
         public EventoController()
         {
