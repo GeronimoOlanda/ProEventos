@@ -1,8 +1,11 @@
-<p>eventos works!</p>
 
+<div class="container">
+  <p>eventos works!</p>
 
-
-<div *ngFor="let evento of eventos">
-  <p><strong>Tema:</strong> {{ evento.tema }}</p>
-  <p><strong>Local:</strong> {{ evento.local}} </p><br/>
+  <div *ngFor="let evento of eventos">
+    <p><strong>Tema:</strong> {{ evento.tema }}</p>
+    <p><strong>Local:</strong> {{ evento.local}} </p><br/>
+    <hr />
+  </div>
 </div>
+

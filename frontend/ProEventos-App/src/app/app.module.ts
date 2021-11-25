@@ -17,6 +17,7 @@ import { PalestrantesComponent } from './palestrantes/palestrantes.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule // importar esse modulo aqui para poder usa-lo de forma global
+
   ],
   providers: [],
   bootstrap: [AppComponent]
