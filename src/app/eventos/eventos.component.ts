@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent implements OnInit {
-  public eventos: any;
+  public eventos: any = [];
 
   constructor(private http: HttpClient) {
 
@@ -18,10 +18,12 @@ export class EventosComponent implements OnInit {
   }
 
   public getEventos() : void {
+
     this.http.get('https://localhost:44367/api/Evento/').subscribe(
       response => this.eventos = response,
       error => console.log(error),
     );
+
   }
 
 }
