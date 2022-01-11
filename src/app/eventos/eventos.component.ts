@@ -35,17 +35,17 @@ export class EventosComponent implements OnInit {
 
   }
 
-
   constructor(private http: HttpClient) {
-
    }
 
   ngOnInit(): void {
     this.getEventos()
   }
+  //modifica o estado da imagem de forma booleana
   ModifyStateImg(){
     this.showImg = !this.showImg;
   }
+  //recebe os dados da nossa API
   public getEventos() : void {
 
     this.http.get('https://localhost:44367/api/Evento/').subscribe(
