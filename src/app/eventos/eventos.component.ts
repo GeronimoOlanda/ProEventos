@@ -28,8 +28,9 @@ export class EventosComponent implements OnInit {
   //fazendo o filtro para que tudo seja filtrado em letra minuscula e que seja diferente de vazio
   filterEvents(FilterBy: string): any {
     FilterBy = FilterBy.toLocaleLowerCase();
+    // filtrando por tema ou local
     return this.eventos.filter(
-      (evento: any) => evento.tema.toLocaleLowerCase().indexOf(FilterBy) !== -1
+      (evento: any) => evento.tema.toLocaleLowerCase().indexOf(FilterBy) !== -1 || evento.local.toLocaleLowerCase().indexOf(FilterBy) !== -1
     );
 
   }
